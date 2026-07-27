@@ -2,7 +2,7 @@
 DC motor speed control (PID-tuned)
 
 $$
-\frac{dR}{dt} = \alpha R\left(1-\frac{R+G}{k}\right) - \beta RG
+\frac{\omega(s)}{V(s)} = \frac{K_t}{(L+R)(J+B)+K_e K_t}
 $$
 
 $$
