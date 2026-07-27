@@ -18,3 +18,6 @@ Ke = 0.01
 R = 1
 L = 0.5
 in all the figures.
+
+![Comparison print](Comparison.png)
+This figure compares the behaviour of the close loop and open loop model. We can see that the open loop model without the PID controller reaches the settling speed faster than the close loop model. However a controller is designed to achieve multiple objectives, not just "get there as fast as possible." ts also becaus in this simplify version all the paramters are known and are constant. There are also no disturbances in the system which would greatly affect the performannce of the open loop system.
