@@ -24,6 +24,7 @@ This figure compares the behaviour of the close loop and open loop model. We can
 
 A stateflow chart is added to the model to control between different states such as idle, accelerating, cruise and breaking.
 ![stateflow model print](Stateflow_model.png)
-![simulink/stateflow model print](Simulink_mmodel_with_stateflow.png)
+![simulink/stateflow model print](Simulink_model_with_stateflow.png)
 
 ![Speed_graph print](Stateflow.png)
+The behaviour shown in the figure is expected from the model. Speed start increasing at time = 2 when the state switches to accelerating. Speed then start to decrease 10 seconds after reaching close to the reference speed 1m/s approaching 0.
