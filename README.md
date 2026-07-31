@@ -20,11 +20,14 @@ L = 0.5
 in all the figures.
 
 ![Comparison print](Comparison.png)
-This figure compares the behaviour of the close loop and open loop model. We can see that the open loop model without the PID controller reaches the settling speed faster than the close loop model. However a controller is designed to achieve multiple objectives, not just "get there as fast as possible." ts also becaus in this simplify version all the parameters are known and are constant. There are also no disturbances in the system which would greatly affect the performannce of the open loop system.
+This figure compares the behaviour of the close loop and open loop model. We can see that the open loop model without the PID controller reaches the settling speed faster than the close loop model. However a controller is designed to achieve multiple objectives, not just "get there as fast as possible." It is also because in this simplify version all the parameters are known and are constant. There are also no disturbances in the system which would greatly affect the performance of the open loop system. For example if a load is applied to the motor, the speed drops permanently because the voltage never changes.
 
 A stateflow chart is added to the model to control between different states such as idle, accelerating, cruise and breaking.
 ![stateflow model print](Stateflow_model.png)
 ![simulink/stateflow model print](Simulink_model_with_stateflow.png)
 
-![Speed_graph print](Stateflow_figure.png)
+![Speed_graph print](ref_vs_actual.png)
 The behaviour shown in the figure is expected from the model. Speed start increasing at time = 2 when the state switches to accelerating. Speed then start to decrease 10 seconds after reaching close to the reference speed 1m/s approaching 0. After that the cycle repeats with speed increasing again.
+
+![Speed_graph print](voltage.png)
+This figure show the voltage over time. We can see it tightly follow the shape of the speed graph which again is expected.
